@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="IMC.css">
+  <title>Cauculadora de IMC</title>
+</head>
+<body>
+  <div class="continer">
+    <h1 class="title">Cauculadora de IMC</h1>
+    <div class="engloba-divs">
+      <div class="div-altura">
+        <label for="altura">Altura(cm)</label>
+        <input type="number" name="altura" id="altura" class="altura" placeholder="EX: 177cm" required>
+      </div>
+      <div class="div-peso">
+        <label for="peso">Peso(kg)</label>
+        <input type="number" name="peso" id="peso" class="peso" step=".0" placeholder="EX: 70kg" required>
+      </div>
+    </div>
+    <div class="div-button">
+      <input type="button" value="Calcular" id="button" class="button" onclick="calcular()">
+    </div>
+    <div id="resultado">
+      <P id="res">RESULTADO!</P>
+    </div>
+  </div>
+  <script src="IMC.js"></script>
+</body>
+</html>
